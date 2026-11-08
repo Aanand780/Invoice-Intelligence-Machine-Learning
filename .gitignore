@@ -11,3 +11,19 @@ freight_cost_prediction/data/
 *.db-wal
 *.db-shm
 *.db-journal
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Virtual environment
+.venv/
+venv/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
