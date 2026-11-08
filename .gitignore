@@ -1,0 +1,13 @@
+# Ignore all SQLite database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Ignore dataset directories
+data/
+freight_cost_prediction/data/
+
+# Ignore database backup files
+*.db-wal
+*.db-shm
+*.db-journal
