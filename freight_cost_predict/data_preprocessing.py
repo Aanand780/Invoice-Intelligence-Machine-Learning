@@ -8,11 +8,11 @@ from sklearn.model_selection import train_test_split
 import pandas as pd
 
 
-# Function to load vendor invoice data from SQLite database
-def load_vendor_invoice_data(db_path: str):
+# Function to load invoice data from SQLite database
+def load_invoice_data(db_path: str):
 
     """
-    Load vendor invoice data from SQLite database.
+    Load  invoice data from SQLite database.
     """
 
     # Establish connection with the SQLite database
