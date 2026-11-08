@@ -19,7 +19,8 @@ def load_invoice_data(db_path: str) -> pd.DataFrame:
 def prepare_features(df: pd.DataFrame):
 
     X = df[["Dollars"]]
-    y = df[["Freight"]]
+    # Keep the target one-dimensional for scikit-learn estimators.
+    y = df["Freight"]
 
     return X, y
 

@@ -1,4 +1,5 @@
 import joblib
+import json
 from pathlib import Path
 
 from data_preprocessing import load_invoice_data, prepare_features, split_data
@@ -43,6 +44,13 @@ def main():
         "Random Forest Regression": rf_model
     }
     best_model = best_model_map[best_model_name]
+    
+    # Save model evaluation results
+    results_path = model_dir / "model_results.json"
+    with open(results_path, "w") as file:
+        json.dump(results, file, indent=4)
+        
+    print(f"Evaluation results saved: {results_path}")
 
     # Save the best-performing model
     model_path = model_dir / "predict_freight_model.pkl"
