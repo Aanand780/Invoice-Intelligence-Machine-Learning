@@ -1,0 +1,20 @@
+[
+    {
+        "model_name": "Linear Regression",
+        "mae": 24.1059770728758,
+        "rmse": 124.72096203547433,
+        "r2": 96.98787714456559
+    },
+    {
+        "model_name": "Decision Tree Regression",
+        "mae": 32.97258248871931,
+        "rmse": 150.306839511785,
+        "r2": 95.62526991034434
+    },
+    {
+        "model_name": "Random Forest Regression",
+        "mae": 27.203783506953165,
+        "rmse": 131.75694531154775,
+        "r2": 96.63844042693471
+    }
+]
